@@ -1,0 +1,17 @@
+.input {
+    width: 320px;
+    height: 45px;
+
+    margin-right: 5px;
+    padding: 25px 0 27px 30px;
+
+    font-size: 18px;
+    color: #A1A1A1;
+    border: 1px solid #EBEBEB;
+
+    &.checkbox {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+    }
+}

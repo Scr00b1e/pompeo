@@ -1,0 +1,60 @@
+.home {
+
+    &__words {
+        margin-top: 100px;
+        text-align: center;
+
+        @media screen and (max-width: 996px) {
+            margin-top: 70px;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        color: #D77474;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 996px) {
+            font-size: 36px;
+        }
+    }
+    &__link {
+        text-align: center;
+        margin: 60px 0 120px;
+    }
+    .content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        &::before {
+            content: 'Product Collections';
+            position: absolute;
+            top: 300px;
+            left: -300px;
+
+            font-size: 19px;
+            letter-spacing: 1px;
+            text-transform: uppercase;  color: #DBDBDB;
+
+            transform: rotate(-90deg);
+
+            @media screen and (max-width: 996px) {
+                content: none;
+            }
+        }
+
+        @media screen and (max-width: 996px) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.news {
+    padding: 100px 0 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__img {
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #D77474;
+
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 50px;
+
+        margin-bottom: 60px;
+
+        img {
+            margin-top: -40px;
+        }
+    }
+    &__checkbox {
+        margin-top: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            color: #A1A1A1;
+            font-size: 16px;
+        }
+    }
+}

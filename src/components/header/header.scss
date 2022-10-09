@@ -1,0 +1,146 @@
+.header {
+    //-webkit-transform: translate3d(0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+
+    transform: translateY(0);
+    transition: all .3s ease;
+    background: #fff;
+
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 996px) {
+        padding: 0 20px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 20px 0;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 40px;
+            
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #6C6C6C;
+
+            cursor: pointer;
+            transition: all .2s linear;
+
+            &:hover {
+                color:  #AC1313;
+            }
+
+            @media (max-width: 996px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+        position: relative;
+
+        img {
+            margin-top: -5px;
+            margin-right: 5px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -20px;
+
+            width: 1px;
+            height: 38px;
+            background: #EBEBEB;
+        }
+
+        @media  (max-width: 996px) {
+            font-size: 16px;
+        }
+    }
+
+    .burger {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+
+        border: #6C6C6C 1px solid;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        &.open {
+            &::before {
+                transform: rotate(-45deg);
+            }
+            &::after {
+                transform: rotate(45deg);
+            }
+            .burger__menu {
+                opacity: 0;
+                font-size: 0;
+            }
+        }
+        &__menu {
+            display: inline;
+            height: 3px;
+            width: 20px;
+
+            font-size: 0;
+
+            background: #6C6C6C;
+            transition: all .3s linear;
+        }
+        &::after,&::before {
+            content: '';
+            position: absolute;
+
+            display: inline;
+            height: 3px;
+            width: 20px;
+
+            background: #6C6C6C;
+            transition: all .3s linear;
+        }
+        &::after {
+            transform: translateY(-8px);
+        }
+        &::before {
+            transform: translateY(8px);
+        }
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
+}

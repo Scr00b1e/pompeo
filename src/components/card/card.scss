@@ -1,0 +1,35 @@
+.card {
+    width: 350px;
+    margin: 10px;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    border-bottom: 1px #cbc8c8 solid;
+
+    &__image {
+        width: 350px;
+        max-height: 465px;
+        overflow: hidden;
+    }
+    img {
+        transition: 2s all linear;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__bottom {
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 16px;
+        color: #6C6C6C;
+    }
+    &__subtitle {
+        //font-size: 14px;
+    }
+}

@@ -1,0 +1,58 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100%;
+
+    background: rgba(#000, .3);
+
+    &__content {
+        position: absolute;
+        top: 40%;
+        left: 37%;
+        z-index: 1150;
+
+        max-width: 700px;
+        max-height: 400px;
+
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: 5px 5px 20px rgba(#000, .5);
+
+        animation-name: moveY;
+        animation-duration: .7s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+
+        @keyframes moveY {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);   
+            }
+        }
+    }
+
+    &__buttons {
+        margin-top: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+    }
+}

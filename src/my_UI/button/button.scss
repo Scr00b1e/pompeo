@@ -1,0 +1,30 @@
+.btn {
+    background: #AC1313;
+    border-radius: 0px;
+    border: none;
+
+    padding: 20px 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;color: #FFFFFF;
+
+    transition: all .3 ease-in-out;
+
+    &:hover {
+        background: darken(#AC1313, 5%);
+    }
+    &.cancel {
+        background-color: #ffffff53;
+        border: 1px #000 solid;
+        border-radius: 10px;
+
+        color: #000;
+        margin-right: 20px;
+
+        &:hover {
+            background: darken(#ffffff53, 5%);
+        }
+    }
+}

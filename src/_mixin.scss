@@ -1,0 +1,8 @@
+@mixin breakpoint($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+$tablet-bp: 996px;
+$mobile-bp: 575px;

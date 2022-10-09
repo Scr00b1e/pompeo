@@ -1,0 +1,143 @@
+.about {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+
+    &::before {
+        content: 'Hand Craft Pottery';
+        position: absolute;
+        top: 400px;
+        left: -400px;
+
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #DBDBDB;
+        text-transform: uppercase;
+
+        transform: rotate(-90deg);
+
+        @media screen and (max-width: 996px) {
+            content: none;       
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #D77474;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 20px 0 60px;
+
+        @media screen and (max-width: 996px) {
+            font-size: 36px;
+        }
+    }
+    &__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 996px) {
+            justify-content: space-around;
+        }
+    }
+    &__item {
+        
+        &-text {
+            margin-top: 10px;
+
+            font-size: 14px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        &-first, &-second, &-third {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 240px;
+            height: 240px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+
+                height: 240px;
+                width: 240px;
+                
+                @media screen and (max-width: 996px) {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            @media screen and (max-width: 996px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &-first {
+            background: url('./1.png') center no-repeat;
+            background-size: cover;
+        }
+
+        &-second {
+            background: url('./2.png') center no-repeat;
+            background-size: cover;
+        }
+
+        &-third {
+            background: url('./3.png') center no-repeat;
+            background-size: cover;
+        }
+    }
+    &__img {
+        transform: translateZ(1px);
+    }
+    
+    &__words {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        text-align: start;
+        margin-top: 60px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 29px;
+            line-height: 36px;
+
+            @media screen and (min-width: 996px) {
+                font-size: 26px;
+            }
+        }
+        p {
+            margin-top: 25px;
+
+            font-size: 14px;
+            line-height: 24px;
+            color: #6C6C6C;
+        }
+
+        &-right {
+            margin-left: 100px;
+        }
+    }
+
+    @media screen and (max-width: 996px) {
+        padding: 70px 20px;
+    }
+}

@@ -1,0 +1,76 @@
+.intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    padding-top: 100px;
+    height: 850px;
+    
+    overflow: hidden;
+
+    @media screen and (max-width: 996px) {
+        padding: 0 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__words {
+        position: relative;
+        margin-top: -50px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 40px;
+            z-index: 1;
+
+            height: 60px;
+            width: 60px;
+
+            background: url('./idk.png') center no-repeat;
+            background-size: cover;
+
+            @media screen and (max-width: 996px) {
+               right: -5px; 
+               top: -5px;
+            }
+        }
+    }
+    &__subtitle {
+        color: #D77474;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        @media screen and (max-width: 996px) {
+            font-size: 18px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.3;
+
+        @media screen and (max-width: 996px) {
+            font-size: 36px;
+        }
+    }
+    &__text {
+        margin: 10px 0 50px 0;
+        color: #6C6C6C;
+        font-size: 16px;
+    }
+    &__img {
+        margin-right: -300px;
+
+        @media screen and (max-width: 996px) {
+            margin-right: -200px;
+        }
+    }
+}

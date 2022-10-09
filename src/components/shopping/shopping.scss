@@ -1,0 +1,49 @@
+.shopping {
+    position: relative;
+    overflow: hidden;
+
+    height: 500px;
+    width: 100%;
+
+    transition: all 1s linear;
+
+    &__inner {
+        padding: 15% 0 0;
+
+        @media screen and (max-width: 996px) {
+            padding: 15% 20px 0;
+        }
+    }
+    &__subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #D77474;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 996px) {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    &__text {
+        width: 4350px;
+        margin-bottom: 30px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6C6C6C;
+
+        span {
+            color: #AC1313;
+            text-decoration: underline;
+        }
+    }
+}
